@@ -1,10 +1,9 @@
-gsite
-=====
+Creeper's Remorse Website
+=========================
 
-This project contains the complete source code for my website, which can
-be found at http://gc-taylor.com. Given that it is not at all difficult to
-hand-craft such a thing on your own, this is mostly offered in the open for
-the sake of example.
+This project contains the complete source code for the website for the
+Creeper's Remorse Minecraft SMP server. Feel free to take and adapt this to
+your needs, or submit pull requests if you'd like to help improve the site. 
 
 Licensing
 --------------------------
