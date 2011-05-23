@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="minecraft, smp, multiplayer">
+  <meta name="description" content="Website for the Creeper's Remorse Minecraft server.">
+  <title>Creeper's Remorse - {% block title %}{{page_title}}{% endblock %}</title>
+  {% block extra_head %}{% endblock %}
+  
+  {% css 'css/joined_base.css' %}
+  {% block extra_head_css %}{% endblock %}
+  
+  {% block extra_head_js %}{% endblock %}
+
+</head>
+
+<body>
+<div id="container">
+  <div id="header">
+    <div id="title_container">
+      <a href="{% url home %}">Creeper's Remorse</a>
+    </div>
+  </div>
+  
+  <div id="menu">
+    <div class="menu_button">
+      <a href="{% url home %}">Home</a>
+    </div>
+    <div class="menu_button">
+      <a href="{% url pages-get_playing %}">Get Playing</a>
+    </div>
+    <div class="menu_button">
+      <a href="http://groups.google.com/group/creeperslament">Mailing List</a>
+    </div>
+    <div class="menu_button">
+      <a href="http://mcmap.s3-website-us-east-1.amazonaws.com/omap/">World Map</a>
+    </div>
+  </div>
+  
+  <div id="menu_border"></div>
+  
+  <div id="body_wrap">
+
+    <div id="{% block content_class %}content{% endblock %}">
+      {% block body %}
+      <h2>Default Header</h2>
+      <p>Filler content</p>
+      {% endblock %}
+    </div>
+
+    <div id="footer">
+      All material is licensed under 
+      <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons</a>, 
+      unless otherwise noted. 
+    </div>
+
+    
+  </div>
+
+</div>
+</body>
+</html>
+

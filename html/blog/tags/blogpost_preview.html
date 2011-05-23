@@ -1,0 +1,15 @@
+<div class="blog_post">
+  <h1><a href="{{bpost.get_absolute_url}}">{{bpost.title}}</a></h1>
+  <div class="posted_on">
+    Posted on {{bpost.date_published|date:"F j, Y"}}
+  </div>
+  
+  {{bpost.body|safe|truncatewords_html:120}}
+  
+  {% if bpost.body|safe|wordcount > 120 %}
+  <div class="read_more">
+    <a href="{{bpost.get_absolute_url}}">(Read the rest)</a>
+  </div>
+  {% endif %}
+  
+</div>

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}{{bpost.title}}{% endblock %}
+
+{% block extra_head_css %}
+<link href="{% media_url 'js/syntaxhilighter/styles/shCore.css' %}" rel="stylesheet" type="text/css">
+<link href="{% media_url 'js/syntaxhilighter/styles/shThemeDefault.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block extra_head_js %}
+<script type="text/javascript" src="{% media_url 'js/syntaxhilighter/scripts/shCore.js' %}"></script>
+<script type="text/javascript" src="{% media_url 'js/syntaxhilighter/scripts/shBrushPython.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+
+<h1>{{bpost.title}}</h1>
+<div class="posted_on">
+  Posted on {{bpost.date_published|date:"F j, Y"}}
+</div>
+
+{{bpost.body|safe}}
+
+<div class="bottom_bar">
+  Categories:
+  {% for cat in bpost.category.all %}
+    <a href="{{cat.get_absolute_url}}">{{cat.name}}</a>&nbsp;
+  {% endfor %}
+</div>
+
+
+<div id="comment_section">
+  <script type="text/javascript">
+  var idcomments_acct = '74b7da59050cd5b2a7a9b657f17e8755';
+  var idcomments_post_id = '{{bpost.id}}';
+  var idcomments_post_url = '{{intense_debate_post_url}}{{bpost.get_absolute_url}}';
+  </script>
+  <span id="IDCommentsPostTitle" style="display:none"></span>
+  <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+</div>
+
+
+{% endblock %}

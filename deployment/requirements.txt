@@ -1,0 +1,9 @@
+django
+Fabric
+south
+boto
+gunicorn
+django-extensions
+django-tinymce
+git+http://github.com/sunlightlabs/django-mediasync.git#egg=django-mediasync
+git+http://github.com/duointeractive/django-fabtastic.git#egg=fabtastic

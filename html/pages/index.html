@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+<h1>Survival Multiplayer Minecraft at its best</h1>
+
+<p>
+    Creeper's Remorse is a survival multiplayer (SMP) Minecraft server. Our
+    goals for this server are to provide...
+</p>
+
+<ul>
+  <li>
+    Reliability. It sucks when someone gets in the way of your addic...
+    hobby. The server only goes down for patching when new goodies are
+    released.
+  </li>
+  <li>
+    Performance. This is not being ran on a spare machine in someone's
+    basement. We are hosted in a high grade data center in Atlanta, and
+    are able to scale up to handle more players as needed.
+  </li>
+  <li>
+    Safety. We back up aggressively, and are a white-list restricted
+    server. Your creations will be safe, and should you choose to leave,
+    feel free to take a copy of the 
+    <a href="http://s3.amazonaws.com/mcserver-backups/latest.tar.bz2">latest world map</a> with you.
+  </li>
+  <li>
+    Freedom from meddling. There are no in-game ops. Everyone must harvest,
+    mine, and gather on their own. No freebies, no power-tripping mods.
+    Changes and policies are discussed on our friendly 
+    <a href="http://groups.google.com/group/creeperslament">mailing list</a>.
+</ul>
+
+<h2>How to get playing</h2>
+
+<p>
+    For those that are new, you'll want to make your way over to the
+    <a href="{% url pages-get_playing %}">Get Playing</a> page. Those who are 
+    already signed up and white-listed may point their client at the following 
+    address:
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;<strong>smp.creepersremorse.com</strong>
+</p>
+<p>
+    <em>
+    Note: If you have not followed the instructions on the
+    Get Playing
+    page, you will not be able to connect.
+    </em>
+</p>
+{% endblock %}

@@ -1,0 +1,284 @@
+html {
+   min-height: 100%; 
+   margin-bottom: 1px; 
+   background-color:rgb(25,25,25);
+   overflow-y: scroll; 
+}
+
+body {
+   color: black;
+   text-align: center;
+   font: 13px/1.3em Arial,Verdana,sans-serif;
+   line-height:19px;
+}
+
+h1 {
+   color: #444;
+   padding-top:2px;
+   padding-bottom: 5px;
+   font-size: 24px;
+}
+
+h2, h3 {
+    margin-top:10px;
+    margin-bottom:10px;
+    color: #444;
+    font-size: 19px;
+}
+
+h3 {
+    font-size: 16px;	
+}
+
+a, a:link, a:visited {
+   color: #AB5603;
+   text-decoration: none;
+}
+
+h1 a {
+    text-decoration:none;
+}
+
+a:hover {
+   color: rgb(96,139,40);
+   text-decoration:none;
+   background-color:rgb(224,255,184);
+}
+
+h1 a:hover {
+    background-color:inherit;
+}
+
+
+img {
+   border:none;
+}
+
+label {
+	display:block;
+	font-weight:bold;
+}
+
+table {
+   border-collapse: collapse;
+   margin: 0 auto;
+   padding-top:6px;
+   padding-bottom:6px;
+}
+
+th {
+   padding:3px;
+   font-weight:bold;
+}
+
+td { 
+   border:1px solid #000033;
+   padding:3px;
+}
+
+p { 
+   padding-top:8px;
+   padding-bottom:8px;
+}
+
+ul {
+   padding-left:10px;
+   padding-bottom:3px;
+}
+
+li {
+   margin-left: 2em; 
+   list-style-type:square;
+   padding:2px;
+}
+
+strong, b {
+   font-weight:bold;
+}
+
+em {
+   font-style:italic;
+}
+
+#header {
+   width: 100%;
+   height: 78px;
+   background-color:rgb(0,0,0);
+   text-align: left;
+}
+
+#header #title_container {
+   padding-left:30px;
+   padding-top:40px;
+   margin:0 auto;
+   width:1024px;
+   
+}
+
+#header #title_container a {
+	color:white;
+	text-decoration:none;
+	font-size: 250%;
+	font-family: 'Candal', arial, serif;
+}
+
+#header #title_container a:hover {
+	color:white;
+	background-color:inherit;
+}
+
+#menu {
+   width: 100%;
+   height:25px;
+   background-color:rgb(80,49,20);
+}
+#menu_border {
+   width:100%;
+   height:5px;
+   background-color:rgb(40, 24, 10);
+}
+
+#menu .menu_button {
+	display:inline-block;
+	margin-right:10px;
+	margin-left:10px;
+	height:100%;
+}
+
+#menu div.menu_button a {
+	font-size:120%;
+	text-decoration:none;
+	display:block;
+	width:120px;
+	color:rgb(255,232,22);
+	margin-top:3px;
+	text-align:center;
+	/*border:1px solid yellow;*/
+}
+#menu div.menu_button a:hover {
+	background-color:inherit;
+}
+#menu div.menu_button:hover {
+    background-color:rgb(70,109,40);
+} 
+
+#container {
+	border:none;
+}
+#body_wrap {
+   width: 1024px;
+   margin: 0 auto;
+   margin-top:20px;
+}
+#content {
+	background-color:white;
+	padding: 15px 15px 15px 15px;
+	width:1004px;
+	text-align: left;
+}
+#blog_content {
+    width:1024px;;
+    text-align: left;
+}
+div.blog_post {
+	background-color:white;
+	margin-bottom:7px;
+	padding:10px;
+}
+div.blog_post h1 a {
+	font-size: 80%;
+	text-decoration:none;
+	color:#AB5603;
+}
+div.blog_post div.read_more {
+    font-size:85%;
+    color:rgb(9,46,32);
+    margin-top:3px;
+}
+div.posted_on {
+	font-size:85%;
+	color:rgb(9,46,32);
+	margin-top:2px;
+	margin-bottom:3px;
+}
+div.bottom_bar {
+	font-size:85%;
+	color:rgb(9,46,32);
+    border:1px solid #EEEEEE;
+    padding:5px;
+    clear:both;
+    margin-top:5px;
+}
+
+#comment_section {
+	clear:both;
+	margin-top:10px;
+}
+
+#bpost_paginator {
+    color:rgb(255,232,22);
+    margin-bottom:10px;
+}
+
+#bpost_paginator a {
+	color:rgb(255,232,22);
+	text-decoration:none;
+}
+
+#bpost_paginator a:hover {
+    color:rgb(255,232,22);
+    background-color:transparent;
+    text-decoration:none;
+}
+
+#bpost_paginator div.badges {
+	float:right;
+}
+div.badges img {
+	vertical-align:text-bottom;
+}
+
+* html #content { padding-top: 1.8em; } /* Set padding top in IE to 20px */
+
+#footer {
+	clear:both;
+	width:1024px;
+   text-align: right;
+   color: white;
+   letter-spacing: 0.15em;
+   font-size: 80%;
+   margin-top:5px;
+   margin-bottom:10px;
+}
+#footer_badges {
+    text-align:center;
+}
+
+#footer a {
+   color:white;
+   text-decoration:none;
+}
+
+.cleartable td {
+   border: none;
+}
+
+.txt_leftal {
+   text-align:left;
+}
+
+.padded_list li {
+   padding:3px;
+}
+.pagination_controls {
+    margin:8px;
+}
+.pagination_controls a {
+    border:1px solid grey;
+    padding:3px;
+    background-color: #EEEEEE;
+    text-decoration:none;
+}
+.pagination_controls a:hover {
+	background-color:white;
+}

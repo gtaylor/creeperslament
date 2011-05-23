@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load blog_tags %}
+
+{% block title %}Blog{% endblock %}
+{% block content_class %}blog_content{% endblock %}
+
+{% block body %}
+  
+{% for bpost in object_list %}
+    {% blogpost_preview bpost %}
+{% endfor %}
+  
+<div id="bpost_paginator">
+    {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}">&larr; Older entries</a>
+    {% endif %}
+    
+    {% if page_obj.has_next and page_obj.has_previous %}
+        &nbsp;&nbsp;&nbsp;
+    {% endif %}
+    
+    {% if page_obj.has_previous %}
+        <a href="?page={{ page_obj.previous_page_number }}">Newer entries &rarr;</a>
+    {% endif %}
+    
+    {% if rss_link %}
+    <div class="badges">
+        <a href="{{rss_link}}">
+          <img src="{% media_url 'img/syndicated-feed-icon.gif' %}">
+          Subscribe
+        </a>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

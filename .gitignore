@@ -1,0 +1,14 @@
+*.pyc
+*~
+*.svn
+*.db3
+.dump
+local_settings.py
+.project
+.pydevproject
+.settings
+fabtastic
+*.log
+*.pid
+media/admin_media
+.DS_Store
