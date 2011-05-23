@@ -19,7 +19,7 @@ env.REMOTE_CODEBASE_PATH = '/home/mcserv/creeperslament'
 # Path relative to REMOTE_CODEBASE_PATH.
 env.PIP_REQUIREMENTS_PATH = 'deployment/requirements.txt'
 # The standardized virtualenv name to use.
-env.REMOTE_VIRTUALENV_NAME = 'creeperslament'
+env.REMOTE_VIRTUALENV_NAME = 'mcserv'
 
 # This is used for reloading gunicorn processes after code updates.
 env.GUNICORN_PID_PATH = os.path.join(env.REMOTE_CODEBASE_PATH, 'gunicorn.pid')

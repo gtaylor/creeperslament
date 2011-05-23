@@ -37,7 +37,7 @@ MEDIASYNC = {
     #'SERVE_REMOTE': True,
     #'AWS_KEY': AWS_ACCESS_KEY_ID,
     #'AWS_SECRET': AWS_SECRET_ACCESS_KEY,
-    #'AWS_BUCKET': 'coursebook-static-media',
+    #'AWS_BUCKET': 'creeperslament',
     # The following entries combine CSS and JavaScript files, and minify them as well.
     'JOINED': JOINED_MEDIA,
     'CACHE_BUSTER': MEDIA_CACHE_BUSTER,
