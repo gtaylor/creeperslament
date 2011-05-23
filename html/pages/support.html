@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Getting Started{% endblock %}
+
+{% block body %}
+<h1>Support</h1>
+<p>
+    For those that have questions, ideas, or concerns, send email to
+    <em>gtaylor AT gc-taylor DOT org</em>. If your question could be answered by
+    our players, posting on our 
+    <a href="http://groups.google.com/group/creeperslament">mailing list</a> 
+    may net a faster response time.
+</p>
+
+<p style="text-align:center">
+    <img src="{% media_url 'img/support.jpg' %}">
+</p>
+
+<h2>FAQ</h2>
+
+<ul>
+    <li>
+        <strong>I am unable to connect to the server due to a weird
+        looking error message.</strong><br>
+        You have probably fallen victim to one of the mysterious bugs in
+        the Minecraft client. Try connecting a few more times. If you have
+        no luck, restart your client and try again. This typically means there
+        is a problem with the Minecraft authentication servers. Also, you will
+        not be able to connect unless you have 
+        <a href="{% url pages-registration %}">registered</a>.
+    </li>
+    <li>
+        <strong>When walking around or after logging in, I see huge square
+        holes in the ground.</strong><br>
+        The big holes you see are "chunks" that didn't load. Chunks are the
+        server's basic unit for mass-loading/transferring blocks. Sometimes they
+        don't load correctly. If the hole doesn't disappear eventually,
+        logging out and logging back in usually fixes it.
+    </li>
+    <li>
+        <strong>The Mac client does X weird thing.</strong><br>
+        The Mac client is a bit more buggy as of Minecraft 1.5, in comparison
+        to the other platforms. Sorry.
+    </li>
+</ul>
+
+{% endblock %}

@@ -149,7 +149,10 @@ em {
 	font-size:120%;
 	text-decoration:none;
 	display:block;
-	width:120px;
+	margin-left:10px;
+	margin-right:10px;
+	padding-left:7px;
+	padding-right:7px;
 	color:rgb(255,232,22);
 	margin-top:3px;
 	text-align:center;

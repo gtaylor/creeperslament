@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block title %}Getting Started{% endblock %}
+
+{% block body %}
+<h1>Getting Started</h1>
+
+<p>
+    <em>
+	    Note: If you have not registered (via a trial membership or by paying
+	    dues), this page will not be of any use to you, as you won't be able to
+	    connect to the server. See the 
+	    <a href="{% url pages-registration %}">Registration</a> page.
+    </em>
+</p>
+
+<p>
+    This is a brief, down-and-dirty guide to getting started on our humble
+    Minecraft server. We assume that you have been white-listed at this point,
+    which means you are either using a trial membership, or have paid dues.
+</p>
+<p>
+
+<h2>Watch the Tutorial first</h2>
+
+<p>
+    We strongly recommend watching this great
+    <a href="http://www.youtube.com/watch?v=ylVtj-1Ccgg&feature=watch_response_rev">tutorial video</a>
+    on Youtube before logging in, to avoid unecessary death/confusion. Take
+    ten minutes and give it a watch if you don't already know what you're
+    doing.
+</p>
+
+    
+<h2>Connecting to the Server</h2>
+
+<ul>
+	<li>
+	    Open the Minecraft client, and you'll find yourself looking at a connect
+	    screen.
+	</li>
+	<li>
+	    Enter the same username/password you did when registering on
+	    <a href="http://minecraft.net">minecraft.net</a> when you were buying the
+	    game. You can then hit <em>Login</em>, and Minecraft will auto-update and 
+	    dump you into another menu screen.
+	</li>
+	<li>
+	    Click on the <em>Multiplayer</em> button. You should now have a text
+	    box to input the following server address: 
+	    <strong>smp.creeperslament.com</strong>
+	</li>
+	<li>
+	    Hit the <em>Connect</em> button, and with any luck, you'll soon find
+	    yourself in front of 
+	    <a href="http://mcmap.s3-website-us-east-1.amazonaws.com/omap/?x=127&y=64&z=95&zoom=-1">town hall</a>.
+	</li>
+</ul>
+
+<h2>Where to go from here</h2>
+
+<p>
+    After connecting, you may explore the starter town, and make your way out
+    to the wilderness to start building when ready. <strong>Please do
+    not break or build immediately around or within the starter town.</strong>
+</p>
+
+<p>
+    A good way to pick out somewhere to build your first house is by looking
+    around on our 
+    <a href="http://mcmap.s3-website-us-east-1.amazonaws.com/omap/">world map</a>
+</p>
+
+<h2>Assorted Tips</h2>
+
+<ul>
+    <li>
+        Skim over our 
+        <a href="{% url pages-useful_resources %}">Useful Resources</a> page.
+        The crafting stuff in particular is extremely useful.
+    </li>
+    <li>
+        If you have not already, watch the 
+        <a href="http://www.youtube.com/watch?v=ylVtj-1Ccgg&feature=watch_response_rev">tutorial</a> 
+        on Youtube or you will be lost.
+    </li>
+    <li>
+        You can talk to other players by pressing <strong>T</strong>, typing 
+        what you want to say, then hitting <strong>Enter</strong>.
+    </li>
+    <li>
+        Watch out for Spiders, Skeletons, Zombies, or Creepers. Creepers 
+        (the green guys with no arms) in particular are dangerous, as they run 
+        up to you and suicide explode themselves in your face.
+    </li>
+    <li>
+        Monsters appear at night in places that aren't well-lit with torches.
+        You probably want to seek shelter at night. 
+    </li>
+    <li>
+        Iron and Diamonds are more common at lower depths. Diamonds are best
+        found at the 12 Y-coordinate. You can see your current coordinates
+        by hitting the <strong>F3</strong> key.
+    </li>
+    <li>
+        If you die, you will re-appear at your spawn point. If you have
+        created and slept in a bed, your spawn point is said bed. If you have
+        not built/used a bed, you will re-appear in front of town hall.
+    </li>
+</ul>
+
+{% endblock %}
