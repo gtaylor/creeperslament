@@ -1,8 +1,8 @@
-Creeper's Remorse Website
-=========================
+Creeper's Lament Website
+========================
 
 This project contains the complete source code for the website for the
-Creeper's Remorse Minecraft SMP server. Feel free to take and adapt this to
+Creeper's Lament Minecraft SMP server. Feel free to take and adapt this to
 your needs, or submit pull requests if you'd like to help improve the site. 
 
 Licensing

@@ -21,7 +21,7 @@ BASE_PATH = os.path.abspath(os.path.split(__file__)[0])
 
 # URL root of the site. Used for things like Intense Debate, that require
 # a consistent domain name for tagging. No trailing slash.
-URL_ROOT = 'http://creepersremorse.com'
+URL_ROOT = 'http://creeperslament.com'
 
 DATABASES = {
     'default': {

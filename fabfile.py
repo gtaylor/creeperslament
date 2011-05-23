@@ -15,11 +15,11 @@ LOCAL_USERNAME = getpass.getuser()
 # REALLY IMPORTANT: You need to generate an SSH key if you don't already
 # have one. You'll also need to send it to a server admin to get it added.
 env.key_filename = os.path.expanduser('~/.ssh/id_rsa.pub')
-env.REMOTE_CODEBASE_PATH = '/home/mcserv/creepersremorse'
+env.REMOTE_CODEBASE_PATH = '/home/mcserv/creeperslament'
 # Path relative to REMOTE_CODEBASE_PATH.
 env.PIP_REQUIREMENTS_PATH = 'deployment/requirements.txt'
 # The standardized virtualenv name to use.
-env.REMOTE_VIRTUALENV_NAME = 'creepersremorse'
+env.REMOTE_VIRTUALENV_NAME = 'creeperslament'
 
 # This is used for reloading gunicorn processes after code updates.
 env.GUNICORN_PID_PATH = os.path.join(env.REMOTE_CODEBASE_PATH, 'gunicorn.pid')
