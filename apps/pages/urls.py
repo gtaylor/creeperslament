@@ -1,9 +1,10 @@
 from django.conf.urls.defaults import *
 from django.views.generic import TemplateView
+import views
 
 urlpatterns = patterns('',
     url(r'^$',
-        TemplateView.as_view(template_name="pages/index.html"),
+        views.HomeView.as_view(),
         name='home'),
     # Sent this out in a mailing list mail, so already accumulating
     # backwards-compatibiltiy cruft!

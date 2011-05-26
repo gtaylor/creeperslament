@@ -145,6 +145,15 @@ TINYMCE_DEFAULT_CONFIG = {
     'remove_linebreaks': True,
 }
 
+# zombiepygman API settings.
+"""
+ZPG_API = {
+    'HOST': 'http://localhost:8001',
+    'TIMEOUT': 5,
+    'SECURITY_TOKEN': 'YOUR_TOKEN',
+}
+"""
+
 """
 Settings that are specific to each instance of the CMS should reside in a
 local_settings.py file, which over-rides the stuff here.

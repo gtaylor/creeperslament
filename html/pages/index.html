@@ -100,4 +100,24 @@
     out, see our <a href="{% url pages-getting_started %}">Getting Started</a>
     guide.
 </p>
+
+<h2>Currently Connected Players</h2>
+{% if connected_players %}
+	<p>
+	    The following players are currently playing on Creeper's Lament:
+	</p>
+	<p style='padding-left:25px;font-style:italic'>
+	    {% for player in connected_players %}
+	        {{ player }}{% if not forloop.last %},{% endif %}
+	    {% endfor %}
+	</p>
+	<p>
+	    There are a total of {{ connected_players|length }} players connected.
+	</p>
+{% else %}
+    <p>
+        There are no players currently connected.
+    </p>
+{% endif %}
+
 {% endblock %}

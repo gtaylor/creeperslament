@@ -5,5 +5,6 @@ boto
 gunicorn
 django-extensions
 django-tinymce
+simplejson
 git+http://github.com/sunlightlabs/django-mediasync.git#egg=django-mediasync
 git+http://github.com/duointeractive/django-fabtastic.git#egg=fabtastic
