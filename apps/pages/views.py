@@ -28,7 +28,7 @@ class HomeView(TemplateView):
         cache_key = 'api_connected_players'
         cache_val = cache.get(cache_key)
 
-        if cache_val == None:
+        if cache_val != None:
             return cache_val
 
         try:
