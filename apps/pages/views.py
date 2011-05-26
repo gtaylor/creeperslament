@@ -28,12 +28,13 @@ class HomeView(TemplateView):
         cache_key = 'api_connected_players'
         cache_val = cache.get(cache_key)
 
-        if cache_val:
+        if cache_val == None:
             return cache_val
 
         try:
             cache_val = zpgapi.call_zpg_api('/cmd/listconnected')['player_list']
         except urllib2.URLError:
+            # Error with zombiepygman.
             # This will get cached, but that's OK. It will prevent request
             # pileup on the gunicorn workers.
             cache_val = []
