@@ -1,3 +1,4 @@
+import urllib2
 from django.views.generic import TemplateView
 from django.core.cache import cache
 from utils import zpgapi
@@ -22,7 +23,6 @@ class HomeView(TemplateView):
         """
         if not zpgapi.is_zgp_api_enabled():
             # API is not configured, skip this.
-            print "BOOP"
             return []
 
         cache_key = 'api_connected_players'
@@ -31,6 +31,12 @@ class HomeView(TemplateView):
         if cache_val:
             return cache_val
 
-        cache_val = zpgapi.call_zpg_api('/cmd/listconnected')['player_list']
+        try:
+            cache_val = zpgapi.call_zpg_api('/cmd/listconnected')['player_list']
+        except urllib2.URLError:
+            # This will get cached, but that's OK. It will prevent request
+            # pileup on the gunicorn workers.
+            cache_val = []
+
         cache.set(cache_key, cache_val, 60)
         return cache_val
