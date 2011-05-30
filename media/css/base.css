@@ -285,3 +285,6 @@ div.badges img {
 .pagination_controls a:hover {
 	background-color:white;
 }
+.error {
+    color:red;
+}

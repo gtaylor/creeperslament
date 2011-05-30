@@ -11,6 +11,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Standard Pages
     url(r'^', include('apps.pages.urls')),
+    url(r'^account/', include('apps.account.urls')),
 
     # Django Admin Interface
     #url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

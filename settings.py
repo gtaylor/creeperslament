@@ -58,7 +58,10 @@ STATIC_ROOT = MEDIA_ROOT
 MEDIA_URL = '/devmedia/'
 
 # URL of the login form
-LOGIN_URL = '/accounts/login/'
+LOGIN_URL = '/account/login/'
+LOGOUT_URL = '/account/logoout/'
+# Where to redirect to after a successful login.
+LOGIN_REDIRECT_URL = '/'
 
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
@@ -67,6 +70,11 @@ ADMIN_MEDIA_PREFIX = '/media/amedia/'
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = 'SOME_UNIQUE_STR_HERE'
+
+AUTHENTICATION_BACKENDS = (
+    'mcauth.backend.MinecraftAuthServerBackend',
+    'django.contrib.auth.backends.ModelBackend',
+)
 
 AWS_ACCESS_KEY_ID = 'ENTER_YOUR_OWN'
 AWS_SECRET_ACCESS_KEY = 'ENTER_YOUR_OWN'
@@ -119,6 +127,7 @@ INSTALLED_APPS_DJANGO = (
 INSTALLED_APPS_LOCAL = (
     #'apps.blog',
     'apps.pages',
+    'apps.account',
 )
 
 INSTALLLED_APPS_EXTERNAL = (

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block body %}
+<h1>Login</h1>
+
+<p>
+    Access to some parts of the site require you to login. You may use the
+    same username and password that you do for Minecraft. We authenticate
+    against <a href="http://minecraft.net">Minecraft.net</a>'s servers over
+    an encrypted connection.
+</p>
+
+{% if form.errors %}
+<p class="error">
+    You have entered an invalid username and/or password. If you have
+    forgotten your Minecraft credentials, please visit Minecraft.net's
+    <a href="http://www.minecraft.net/forgotpass.jsp">Forgot Username or Password page</a>,
+    retrieve your credentials, and return here to login. If you have not
+    purchased Minecraft, you will need to go to
+    <a href="http://www.minecraft.net/prepurchase.jsp">Minecraft.net</a> and do so.
+</p>
+{% endif %}
+
+<form method="post" action="{% url account-login %}">
+{% csrf_token %}
+
+    {{ form.username.label_tag }}
+    {{ form.username }}
+
+    {{ form.password.label_tag }}
+    {{ form.password }}
+
+<br><br>
+<input type="submit" value="login" />
+<input type="hidden" name="next" value="{{ next }}" />
+</form>
+
+{% endblock %}
