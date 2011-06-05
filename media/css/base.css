@@ -110,7 +110,6 @@ em {
    /*background-image: url('/devmedia/img/header.png');*/
    background-image: url('http://s3.amazonaws.com/creeperslament/img/header.png');
    background-repeat: no-repeat;
-   background-attachment: fixed;
    background-position: center top;
 }
 
