@@ -3,7 +3,8 @@ html {
    margin-bottom: 1px; 
    background-color:rgb(25,25,25);
    overflow-y: scroll;
-    background-image: url('/devmedia/img/background.png');
+   /*background-image: url('/devmedia/img/background.png');*/
+   background-image: url('http://s3.amazonaws.com/creeperslament/img/background.png');
 }
 
 body {
@@ -106,7 +107,8 @@ em {
    height: 78px;
    background-color:rgb(0,0,0);
    text-align: left;
-   background-image: url('/devmedia/img/header.png');
+   /*background-image: url('/devmedia/img/header.png');*/
+   background-image: url('http://s3.amazonaws.com/creeperslament/img/header.png');
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-position: center top;
@@ -137,7 +139,8 @@ em {
    height:25px;
    font-weight:bold;
    background-color:rgb(80,49,20);
-   background-image: url('/devmedia/img/navbg.png');
+   /*background-image: url('/devmedia/img/navbg.png');*/
+   background-image: url('http://s3.amazonaws.com/creeperslament/img/navbg.png');
    border-top: 1px solid rgb(3, 0, 64);
    border-bottom: 2px solid rgb(40, 24, 10);
 }
@@ -287,7 +290,7 @@ div.badges img {
     margin:8px;
 }
 .pagination_controls a {
-    border:1px solid grey;
+    border:1px solid gray;
     padding:3px;
     background-color: #EEEEEE;
     text-decoration:none;
