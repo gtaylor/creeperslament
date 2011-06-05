@@ -12,3 +12,4 @@ fabtastic
 *.pid
 media/admin_media
 .DS_Store
+.idea
