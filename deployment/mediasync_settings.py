@@ -26,7 +26,11 @@ JOINED_MEDIA = {
 
 # Tacked on to the end of various URLs to cache bust.
 GIT_COMMIT_HASH_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), '.git', 'ORIG_HEAD')
-GIT_COMMIT_HASH = open(GIT_COMMIT_HASH_FILE, 'r').read().strip()
+try:
+    GIT_COMMIT_HASH = open(GIT_COMMIT_HASH_FILE, 'r').read().strip()
+except IOError:
+    print("Unable to find .git/ORIG_HEAD. You probably need to: "\
+          "git pull origin master")
 # Tacked on to the end of various URLs to cache bust.
 MEDIA_CACHE_BUSTER = GIT_COMMIT_HASH[:20]
 
