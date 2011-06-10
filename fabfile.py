@@ -55,6 +55,7 @@ def deploy():
     Full git deployment. Migrations, reloading gunicorn.
     """
     git_pull()
+    run('cd ~/zombiepygman && git pull')
     south_migrate()
     gunicorn_restart_workers()
     flush_cache()

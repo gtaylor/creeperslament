@@ -9,4 +9,3 @@ simplejson
 git+http://github.com/sunlightlabs/django-mediasync.git#egg=django-mediasync
 git+http://github.com/duointeractive/django-fabtastic.git#egg=fabtastic
 git+http://github.com/gtaylor/django-mcauth.git#egg=mcauth
-git+http://github.com/gtaylor/zombiepygman.git#egg=zombiepygman
