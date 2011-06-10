@@ -31,8 +31,10 @@ class HomeView(TemplateView):
         if cache_val != None:
             return cache_val
 
+        api = zpgapi.get_zpg_api_iface()
         try:
-            cache_val = zpgapi.call_zpg_api('/cmd/listconnected')['player_list']
+            api_response = api.cmd_list_connected()
+            cache_val = api_response['player_list']
         except urllib2.URLError:
             # Error with zombiepygman.
             # This will get cached, but that's OK. It will prevent request
